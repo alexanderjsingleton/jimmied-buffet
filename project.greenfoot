@@ -1,0 +1,6 @@
+#Greenfoot properties
+#Thu Nov 12 18:58:45 CST 2015
+version=2.7.1
+project.charset=UTF-8
+class.MealWorld.superclass=greenfoot.World
+class.MealWorld.image=sand2.jpg
