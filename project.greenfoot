@@ -1,11 +1,13 @@
 #Greenfoot properties
-#Thu Nov 12 19:26:58 CST 2015
+#Thu Nov 12 19:31:54 CST 2015
 class.MealWorld.image=sand2.jpg
 class.MealWorld.superclass=greenfoot.World
 project.charset=UTF-8
 version=2.7.1
 class.Apple.image=apple1.png
 world.lastInstantiated=MealWorld
+class.Bread.image=bread.png
 class.GenericFoodItem.image=smiley2.png
 class.Apple.superclass=GenericFoodItem
+class.Bread.superclass=GenericFoodItem
 class.GenericFoodItem.superclass=greenfoot.Actor
