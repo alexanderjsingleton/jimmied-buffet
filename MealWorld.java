@@ -12,7 +12,7 @@ import java.text.SimpleDateFormat; // time
  */
 public class MealWorld extends World
 {
-
+    private int totalCalories;
     /**
      * Constructor for objects of class MealWorld.
      * 
@@ -23,6 +23,7 @@ public class MealWorld extends World
         super(600, 400, 1); 
         printNameAndTime();
         prepareWorldWindow();
+        totalCalories = 0;
     }
 
     public void prepareWorldWindow()
