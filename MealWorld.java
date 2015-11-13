@@ -22,6 +22,21 @@ public class MealWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
         printNameAndTime();
+        prepareWorldWindow();
+    }
+
+    public void prepareWorldWindow()
+    {
+        GreenfootImage myImageHelper = getBackground(); // a class Variable=>need a Greenfoot Image object to do the work
+        Color previousColor = myImageHelper.getColor(); // remember the previous drawing color
+
+        myImageHelper.setColor(Color.RED); // make the drawing color red
+        myImageHelper.fillRect(getWidth()/2,0,10,getHeight()); // draw the center line
+        myImageHelper.drawString("BUFFET",getWidth() / 4 , getHeight() - 30); // left half description
+        // OR showText("BUFFET", getWidth() / 4 , getHeight() - 30 ); // could also use
+        showText("MY PLATE", getWidth()*3 / 4 , getHeight() - 30 ); // could also be used for tight
+
+        myImageHelper.setColor(previousColor);
     }
 
     public void printNameAndTime()
