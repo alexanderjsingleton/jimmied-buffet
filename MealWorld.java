@@ -24,6 +24,12 @@ public class MealWorld extends World
         printNameAndTime();
         prepareWorldWindow();
         totalCalories = 0;
+        showTotalCalories();
+    }
+
+    private void showTotalCalories()
+    {
+        showText("Total Calories " + totalCalories, getWidth() - 150, 30);
     }
 
     public void prepareWorldWindow()
