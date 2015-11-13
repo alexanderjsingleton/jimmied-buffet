@@ -27,6 +27,12 @@ public class MealWorld extends World
         showTotalCalories();
     }
 
+    public void adjustTotalCalories( int amount )
+    {
+        totalCalories = totalCalories + amount;
+        showTotalCalories();      // display the updated value
+    }
+
     private void showTotalCalories()
     {
         showText("Total Calories " + totalCalories, getWidth() - 150, 30);

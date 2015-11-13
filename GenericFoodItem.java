@@ -32,12 +32,14 @@ public class GenericFoodItem extends Actor
                 total = getWorld().getWidth();
                 setLocation(total - amount , getY());
                 inLeftHalf = false;
+                ((MealWorld)getWorld()).adjustTotalCalories(caloriesForItem);
             }  // end if ( inLeftHalf )
             else
             {
                 amount = getWorld().getWidth() - getX();
                 setLocation(amount,getY());
                 inLeftHalf = true;
+                ((MealWorld)getWorld()).adjustTotalCalories(-caloriesForItem);
             }    // end else
         }   // end     if (Greenfoot.mouseClicked(this))
 
