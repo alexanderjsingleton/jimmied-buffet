@@ -1,9 +1,11 @@
 #Greenfoot properties
-#Thu Nov 12 19:17:03 CST 2015
-version=2.7.1
-project.charset=UTF-8
-world.lastInstantiated=MealWorld
-class.MealWorld.superclass=greenfoot.World
-class.GenericFoodItem.image=smiley2.png
+#Thu Nov 12 19:26:58 CST 2015
 class.MealWorld.image=sand2.jpg
+class.MealWorld.superclass=greenfoot.World
+project.charset=UTF-8
+version=2.7.1
+class.Apple.image=apple1.png
+world.lastInstantiated=MealWorld
+class.GenericFoodItem.image=smiley2.png
+class.Apple.superclass=GenericFoodItem
 class.GenericFoodItem.superclass=greenfoot.Actor
