@@ -16,6 +16,38 @@ public class GenericFoodItem extends Actor
      */
     public void act() 
     {
-        // Add your action code here.
-    }    
+        checkMouseMovedOn();
+        checkClickedOn();
+    }
+
+    public void checkClickedOn()
+    {
+        int amount;
+        int total;
+        if (Greenfoot.mouseClicked(this))
+        {
+            if ( inLeftHalf )
+            {
+                amount = getX();
+                total = getWorld().getWidth();
+                setLocation(total - amount , getY());
+                inLeftHalf = false;
+            }  // end if ( inLeftHalf )
+            else
+            {
+                amount = getWorld().getWidth() - getX();
+                setLocation(amount,getY());
+                inLeftHalf = true;
+            }    // end else
+        }   // end     if (Greenfoot.mouseClicked(this))
+
+    }  // end checkClickedOn
+
+    public void checkMouseMovedOn()
+    {
+        if (Greenfoot.mouseMoved(this))
+        {
+            getWorld().showText("Calories " + caloriesForItem,70,30);
+        }
+    }
 }
