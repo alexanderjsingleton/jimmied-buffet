@@ -21,5 +21,13 @@ public class Apple extends GenericFoodItem
     public void act() 
     {
         super.act();
-    }    
+        if (inLeftHalf)
+        {
+            turn(10);
+        }
+        else
+        setRotation(0);
+    }
 }
+    
+
